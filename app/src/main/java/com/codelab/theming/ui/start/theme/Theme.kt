@@ -1,5 +1,6 @@
 package com.codelab.theming.ui.start.theme
 
+import JetnewsShapes
 import Red700
 import Red800
 import Red900
@@ -22,6 +23,7 @@ private val LightColors = lightColors(
 fun JetnewsTheme(content : @Composable () -> Unit ) {
     MaterialTheme(
         typography = JetnewsTypography,
+        shapes = JetnewsShapes,
         colors = LightColors,
         content = content
     )
