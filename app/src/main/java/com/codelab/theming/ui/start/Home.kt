@@ -225,6 +225,16 @@ private fun FeaturedPostPreview() {
     }
 }
 
+@Preview("Featured Post - Dark")
+@Composable
+private fun FeaturedPostDarkPreview() {
+    val post = remember { PostRepo.getFeaturedPost() }
+    JetnewsTheme(darkTheme = true) {
+        FeaturedPost(post = post)
+    }
+}
+
+
 @Preview("Home")
 @Composable
 private fun HomePreview() {
